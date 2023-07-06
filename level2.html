@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Game - Adivinhe a Cor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style2.css">
+  <style>
+    /* Adicione os estilos personalizados aqui */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="character"></div>
+    <h1 class="text-center">Bem-vindo(a) ao Mini Game</h1>
+    <p class="text-center">Clique para iniciar!</p>
+    <button onclick="startGame()" class="btn btn-primary btn-block">Iniciar</button>
+    <div id="game" style="display: none;">
+      <h2 class="text-center">Adivinhe a Cor</h2>
+      <div class="score">Pontuação: <span id="score">0</span></div>
+      <div id="color-box" class="mx-auto"></div>
+      <button id="audio-button" onclick="playAudio()" class="btn btn-primary btn-block">Ouvir Cor</button>
+      <div class="input-container">
+        <input type="text" id="color-input" placeholder="Digite a cor" class="form-control">
+        <button onclick="checkColor()" class="btn btn-primary btn-block">Verificar</button>
+      </div>
+      <p id="message" class="text-center"></p>
+      <div class="instructions">
+        <h3>Instruções:</h3>
+        <ul>
+          <li>Use o botão "Ouvir Cor" para ouvir a cor a ser adivinhada.</li>
+          <li>Digite o nome da cor no campo de entrada.</li>
+          <li>Clique em "Verificar" para verificar sua resposta.</li>
+          <li>Ganhe 10 pontos por resposta correta e perca 10 pontos por resposta incorreta.</li>
+        </ul>
+        <div>
+          <h3>Clique aqui para voltar ao Inicio</h3>
+          <button class="btn btn-secondary" onclick="goBack()">Voltar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script2.js"></script>
+</body>
+</html>

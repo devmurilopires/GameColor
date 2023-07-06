@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style1.css">
+  <title>Jogo de Cores</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="text-center">
+      <h1>Jogo de Cores</h1>
+      <div id="colorBox" class="color-box"></div>
+      <div class="mt-4">
+        <button id="previous" class="btn btn-primary mr-2">Anterior</button>
+        <button id="next" class="btn btn-primary">Próxima</button>
+        <button id="listen" class="btn btn-secondary ml-2">Ouvir Cor</button>
+        <button class="btn btn-secondary" onclick="goBack()">Voltar</button>
+      </div>
+    </div>
+  </div>
+  
+  <audio id="audio"></audio>
+  <script src="js/script1.js"></script>
+</body>
+</html>

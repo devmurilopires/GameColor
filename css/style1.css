@@ -1,0 +1,32 @@
+.color-box {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+  }
+  
+  .vermelho {
+    background-color: red;
+  }
+  
+  .azul {
+    background-color: blue;
+  }
+  
+  .verde {
+    background-color: green;
+  }
+  
+  .amarelo {
+    background-color: yellow;
+  }
+  
+  .roxo {
+    background-color: purple;
+  }
+  
+  .laranja {
+    background-color: orange;
+  }
+  
