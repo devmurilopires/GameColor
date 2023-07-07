@@ -2,15 +2,11 @@
 
 body {
   font-family: 'Press Start 2P', cursive;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
-  margin: 0;
+  
 }
 
-.container-fluid {
-  width: 100%;
+.container {
+  min-height: 100vh;
 }
 
 .card {
@@ -52,11 +48,6 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-}
-
-/* Adicione os estilos personalizados aqui */
-.container {
-  padding: 20px;
 }
 
 h1 {

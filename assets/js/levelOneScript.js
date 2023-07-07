@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   
     function playSound() {
-      audioElement.src = "audio/" + colors[currentIndex].file;
+      audioElement.src = "./assets/audio/" + colors[currentIndex].file;
       audioElement.play();
     }
   

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,25 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Jogo de Cores</title>
 </head>
+
 <body>
-  <div class="container mt-5">
-    <div class="text-center">
+  <div class="container d-flex align-items-center flex-column bg-primary">
+    <div class="text-center mt-5 bg-secundary">
       <h1>Jogo de Cores</h1>
-      <div id="colorBox" class="color-box"></div>
-      <div class="mt-4">
-        <button id="previous" class="btn btn-primary mr-2">Anterior</button>
-        <button id="next" class="btn btn-primary">Próxima</button>
-        <button id="listen" class="btn btn-secondary ml-2">Ouvir Cor</button>
-        <button class="btn btn-secondary" onclick="goBack()">Voltar</button>
+      <div id="colorBox" class="color-box">
+
       </div>
+      <div class="mt-4 d-flex" style="max-width: 200px;">
+        <button id="previous" class="btn btn-primary">Anterior</button>
+        <button id="listen" class="btn btn-secondary">Ouvir Cor</button>
+        <button id="next" class="btn btn-primary">Próxima</button>
+      </div>
+      <button class="btn btn-secondary" onclick="goBack()">Voltar</button>
     </div>
   </div>
-  
+
   <audio id="audio"></audio>
   <script src="./assets/js/levelOneScript.js"></script>
 </body>
+
 </html>
